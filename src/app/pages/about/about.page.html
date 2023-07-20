@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">About</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header style="text-align: center;">
+      <ion-card-title>{{ appName }}</ion-card-title>
+   </ion-card-header>
+
+    
+    <ion-card-content>
+      <p style=" margin-top: 20px; margin-bottom: 20px;">
+        La aplicación de control de gastos te ayuda a administrar tus finanzas, 
+        realizando un seguimiento de ingresos, gastos, 
+        estableciendo presupuestos y brindando informes visuales para un mayor control financiero.
+     </p>
+     <p style="text-align: center;">Autor: {{ author }}</p>
+     
+      <div class="social-icons">
+        <a href="https://www.twitter.com/" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

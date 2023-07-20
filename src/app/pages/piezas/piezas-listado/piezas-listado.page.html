@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Piezas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()" class="custom-logout-button">
+        Salir
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding-left padding-top>
+  <ion-list #slidingList>
+    <ion-item-sliding *ngFor="let pieza of piezas">
+      <ion-item routerLink="/piezas-add-edit/{{idAsString(pieza.id)}}">
+        <ion-label>
+          <h2>{{pieza.nombre}}</h2>
+          <p style="text-align:right">S/ {{pieza.valor}}</p>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="removerPieza(pieza)">
+          <ion-button color="danger" no-padding>
+            <ion-icon name="trash">
+              Remover
+            </ion-icon>
+          </ion-button>
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" edge="true">
+    <ion-fab-button routerLink="/piezas-add-edit/-1">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

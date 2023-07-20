@@ -1,0 +1,28 @@
+<div class="avatar-container">
+  <img src="assets/imgs/logo.png" alt="Avatar" class="avatar-image">
+</div>
+<div class="input-container">
+  <ion-item>
+    <ion-label position="floating">
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      Usuario
+    </ion-label>
+    <ion-input  type="username" [(ngModel)]="username" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      Contraseña
+    </ion-label>
+    <ion-input type="password" [(ngModel)]="password" required></ion-input>
+  </ion-item>
+</div>
+<div class="ion-padding">
+  <ion-button expand="full" (click)="login()" class="small-oval-button" shape="round">INICIAR SESIÓN</ion-button>
+</div>
+<div class="ion-padding">
+  <p>¿Aún no tienes una cuenta?<a (click)="RegistrarUsuario()" class="register-link">Registrarse</a></p>
+</div>
+<div>
+  <p></p>
+</div>

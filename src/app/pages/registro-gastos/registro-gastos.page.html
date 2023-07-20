@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrar Gastos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Monto</ion-label>
+      <ion-input type="number" [(ngModel)]="monto"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Categoría</ion-label>
+      <ion-input [(ngModel)]="categoria"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Detalles</ion-label>
+      <ion-textarea rows="5" [(ngModel)]="detalles"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-padding">
+    <ion-button expand="full" (click)="guardarRegistro()">Guardar</ion-button>
+
+  </div>
+</ion-content>

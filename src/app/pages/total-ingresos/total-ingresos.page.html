@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Total de Ingresos por Categoría
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of totalIngresosCategoria">
+      <ion-label>
+        
+        <h2><ion-icon name="pricetag-outline"></ion-icon>{{ item.categoria }}</h2>
+        <p>Total: {{ item.total | currency }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

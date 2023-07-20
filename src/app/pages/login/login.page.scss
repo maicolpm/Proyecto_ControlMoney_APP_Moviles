@@ -1,0 +1,32 @@
+/* Estilos para el enlace "Registrarse" */
+.register-link {
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block; /* Asegura que el enlace se muestre en línea */
+    margin-right: -30px;
+
+  }
+/* Estilos para los iconos en los campos de entrada */
+.input-container ion-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container ion-icon {
+    margin-right: 8px;
+  }
+  /* Estilos para el contenedor circular y la imagen del avatar */
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px; /* Ajusta el margen inferior */
+    margin-top: 80px;
+  }
+  
+  .avatar-image {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px; /* Ajusta el tamaño de la imagen  */
+    border-radius: 10%; /* Hace que la imagen tenga forma de círculo */
+  }
+
+  
