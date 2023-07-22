@@ -1,0 +1,7 @@
+{
+  "name": "pruebaControlMoney",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
