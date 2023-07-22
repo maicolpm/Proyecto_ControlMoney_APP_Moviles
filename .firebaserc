@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "controlmoneyapp": {
+      "hosting": {
+        "app": [
+          "controlmoneyapp"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "controlmoneyapp"
+  }
+}
